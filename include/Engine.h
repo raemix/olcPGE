@@ -20,7 +20,23 @@ public:
 protected:
 
 private:
-    Player player;
+    Renderer* renderer = nullptr;
+    Entity* player = nullptr;
+
+    olc::Sprite* sprite = nullptr;
+    olc::Decal* decal = nullptr;
+    olc::vf2d pos;
+    float fAngle;
+    olc::vf2d center;
+    olc::vf2d scale;
+    olc::Pixel tint;
+
+
+    Entity* createEntity(const olc::vf2d& posIn, olc::Decal* decalIn, const float fAngleIn, const olc::vf2d& centerIn, const olc::vf2d& scaleIn, const olc::Pixel& tintIn);
+    Entity* createPlayer();
+    void Draw(Entity* e);
+
+
 };
 
 #endif // ENGINE_H
