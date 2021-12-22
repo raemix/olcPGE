@@ -1,0 +1,92 @@
+# depslib dependency file v1.0
+1640017184 source:/home/mik/cdev/olcPGE/main.cpp
+	<iostream>
+	"main.h"
+
+1640016916 /home/mik/cdev/olcPGE/include/main.h
+	"Engine.h"
+
+1640019861 /home/mik/cdev/olcPGE/include/Engine.h
+	"olcPixelGameEngine.h"
+	"Entity.h"
+	"Player.h"
+
+1640016102 /home/mik/cdev/olcPGE/include/olcPixelGameEngine.h
+	"olcPixelGameEngine.h"
+	"olcPixelGameEngine.h"
+	<cmath>
+	<cstdint>
+	<string>
+	<iostream>
+	<streambuf>
+	<sstream>
+	<chrono>
+	<vector>
+	<list>
+	<thread>
+	<atomic>
+	<fstream>
+	<map>
+	<functional>
+	<algorithm>
+	<array>
+	<cstring>
+	<experimental/filesystem>
+	<filesystem>
+	<windows.h>
+	<X11/X.h>
+	<X11/Xlib.h>
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	<GLUT/glut.h>
+	<objc/message.h>
+	<objc/NSObjCRuntime.h>
+	<dwmapi.h>
+	<GL/gl.h>
+	<GL/gl.h>
+	<GL/glx.h>
+	<OpenGL/OpenGL.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<dwmapi.h>
+	<gl/GL.h>
+	<GL/gl.h>
+	<GL/glx.h>
+	<OpenGL/OpenGL.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<EGL/egl.h>
+	<GLES2/gl2.h>
+	<GLES2/gl2ext.h>
+	<emscripten/emscripten.h>
+	<objidl.h>
+	<gdiplus.h>
+	<gdiplus/gdiplusinit.h>
+	<gdiplusinit.h>
+	<shlwapi.h>
+	<png.h>
+	"stb_image.h"
+	<emscripten/html5.h>
+	<emscripten/key_codes.h>
+
+1640020143 source:/home/mik/cdev/olcPGE/src/Engine.cpp
+	"Engine.h"
+
+1640016172 source:/home/mik/cdev/olcPGE/olc.cpp
+	"olcPixelGameEngine.h"
+
+1640016172 /home/mik/cdev/olcPGE/olc.cpp
+	"olcPixelGameEngine.h"
+
+1640019861 source:/home/mik/cdev/olcPGE/src/Entity.cpp
+	"Entity.h"
+
+1640019165 /home/mik/cdev/olcPGE/include/Entity.h
+	"olcPixelGameEngine.h"
+
+1640017920 /home/mik/cdev/olcPGE/include/Player.h
+	"Entity.h"
+
+1640020268 source:/home/mik/cdev/olcPGE/src/Player.cpp
+	"Player.h"
+
