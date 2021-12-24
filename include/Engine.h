@@ -1,9 +1,11 @@
 #ifndef ENGINE_H
 #define ENGINE_H
 
-#include "olcPixelGameEngine.h"
+//#define OLC_PGE_APPLICATION
+
 #include "Entity.h"
 #include "Player.h"
+
 
 
 
@@ -20,8 +22,7 @@ public:
 protected:
 
 private:
-    Renderer* renderer = nullptr;
-    Entity* player = nullptr;
+    Player* player = nullptr;
 
     olc::Sprite* sprite = nullptr;
     olc::Decal* decal = nullptr;
@@ -30,12 +31,18 @@ private:
     olc::vf2d center;
     olc::vf2d scale;
     olc::Pixel tint;
-
+    olc::vf2d imageSize = {32.0f, 32.0f};
+    olc::vf2d decalSize;
+    float fImageScale = 1.0f;
+    olc::vf2d fCenterFinder = {0.5f, 0.5f};
+    olc::vf2d mouse;
 
     Entity* createEntity(const olc::vf2d& posIn, olc::Decal* decalIn, const float fAngleIn, const olc::vf2d& centerIn, const olc::vf2d& scaleIn, const olc::Pixel& tintIn);
-    Entity* createPlayer();
+    Player* createPlayer(const olc::vf2d& posIn, olc::Decal* decalIn, const float fAngleIn, const olc::vf2d& centerIn, const olc::vf2d& scaleIn, const olc::Pixel& tintIn);
     void Draw(Entity* e);
+    void Draw(Player* e);
 
+    void Exit();
 
 };
 
